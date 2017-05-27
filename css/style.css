@@ -1,0 +1,150 @@
+* {
+    background-color: burlywood;
+}*
+
+p {
+    background-color: cadetblue;
+}
+
+
+/*Pseudo selectory*/
+
+#par1::before, par#::after{
+    content: '*;' 
+        color: #fff;
+    font-size: 3em;
+}
+
+
+#par2::first-line {
+    color: yellow;
+}
+#par2::first-letter {
+    font-size: 10em;
+}
+
+#par1::first-letter {
+    color: red;
+
+}
+
+/*Pseudo klasy*/
+a:visited {
+    color:crimson;
+}
+
+
+a:hover{
+    color:green;
+    font-size: 2em;
+    
+}
+a:active{
+    color:oraangered;
+    
+    
+}
+:focus {
+    background-color: red;
+    }
+p:target {
+    
+    background-color:cyan;
+    
+}
+p:lang(pl) {
+    background-color: white;
+}
+li:first-child {
+    
+    font-size: 2em;
+}
+li:last-child {
+    
+    font-size: 2em;
+}
+span: only-child {
+    text-decoration: line-through;
+}
+
+
+
+p div: empty {
+    width: 600px;
+    height: 20px;
+    background-color: blue;
+    
+}
+
+li:nth-child(odd){
+    background-color: darkviolet;
+    
+}
+li:nth-child(4){
+    background-color: brown;
+
+}
+
+
+li:nth-child(3n){
+    background-color: pink;
+
+}
+
+li:nth-child(2n+1){
+    background-color: lightsalmon;
+
+}
+
+
+
+
+li:nth-child(2n+1):hover{
+    background-color: lightsalmon;
+
+}
+
+
+/* Sektory atrybutów */
+input[title] {
+    background-color: aqua;
+}
+
+
+input[type="text"]{
+    background-color: red;
+        
+}
+
+
+input[type="Tytuł"]
+{
+    background-color: grey;
+        
+}
+
+input[type="po"]
+{
+    background-color: firebrick;
+        
+}
+input[title*="tyt"]
+{
+    background-color: goldenrod;
+        
+}
+
+input[title^="tytuł"]
+{
+    background-color: gainsboro;
+}
+
+input[title$="tytuł"]
+{
+    background-color: turquoise;
+}
+
+input[value$="3"]
+{
+    font-size: 4em;
+}
